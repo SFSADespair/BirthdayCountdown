@@ -1,0 +1,54 @@
+body {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(-45deg, rgb(67, 67, 182), rgb(59, 59, 59), white, rgb(59, 59, 59));
+    background-size: 400%;
+    animation: gradient 20s ease infinite;
+    margin: 0;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 200px;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 150%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.countdown-container {
+    display: flex;
+}
+
+.big-text {
+    font-weight: bold;
+    font-size: 6rem;
+    line-height: 1.3;
+    margin: 0 2rem;
+}
+
+h1 {
+    color: rgb(51, 15, 27);
+    font-weight: normal;
+    font-size: 3rem;
+}
+
+.countdown-el {
+    text-align: center;
+}
+
+.countdown-el span {
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: 'Consolas';
+}
